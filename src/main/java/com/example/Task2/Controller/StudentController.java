@@ -68,10 +68,15 @@ public class StudentController {
     public Student addStudent(@RequestBody Student student){
         return studentService.saveStudent(student);
     }
-    @GetMapping("/All")
-    public List<Student> GetAll(){
-        return studentService.getAllStudents();
-    }
+//    @GetMapping("/All")
+//    public List<Student> GetAll(){
+//        return studentService.getAllStudents();
+//    }
+
+@GetMapping("/All")
+public List<Student> GetAll(){
+    return studentService.getAllStudents();
+}
     @GetMapping("/{id}")
     public Student getById(@PathVariable int id){
         return  studentService.getStudentById(id);
