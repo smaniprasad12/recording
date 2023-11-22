@@ -59,7 +59,8 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/student")
 public class StudentController {
-	private static final Logger logger = LoggerFactory.getLogger(StudentController.class);
+//	private static final Logger logger = LoggerFactory.getLogger(StudentController.class);
+    private static final Logger logger = LoggerFactory.getLogger(StudentController.class);
     @Autowired
     private StudentService studentService;
 
