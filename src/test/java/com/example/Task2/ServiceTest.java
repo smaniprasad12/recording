@@ -48,15 +48,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 			Student s1=sservice.getStudentById(s.getId());
 			assertEquals(s.getId(), s1.getId());
 		}
-//		@Test
-//		public void testUpdate() {
-//			Student s=new Student(1,"prasad",25,2500000);
-//			Student s1=new Student(1,"satish",26,2500000);
-//			when(sRepo.findById(1)).thenReturn(s);
-//			when(sRepo.save(s)).thenReturn(s);
-//			Student s2=sservice.updateStudent(s1.getId(),s1);
-//			assertEquals(s1.getName(), s2.getName());
-//		}
+
 		@Test
 		public void testUpdate() {
 			Student s=new Student(1,"prasad",25,2500000);
